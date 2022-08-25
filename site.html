@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Pizza Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shourtcut icon" type="image/png" href="favicon.ico">
+</head>
+<body>
+<header>
+    <i class="fa-solid fa-smile"></i>
+    <span>Pizza!!!</span>
+<ul>
+    <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+    <li><a href="D:\Website\main\index.html"><i class="fa-solid fa-gamepad"></i></a></li>
+    <li><a href="https://linkhere" target="_blank"><i class="fa fa-copyright"></i></a></li>        
+    <li><a href="https://github.com" target="_blank"><i class="fa-brands fa-github button"></i></a></li>
+    <li><a href="https://twitch.tv/honestlypizza" target="_blank"><i class="fa-brands fa-twitch button"></i></a></li>
+</ul>
+</header>
+
+<main>
+    <h2 class="object" data-value="3"><p>Welcome to My Website!</p></h2>
+    <h2 class="object" data-value="3"><button><style href>a {text-decoration: none}</style><style href>a {color: white}</style><a href="D:\Website\main\index.html">Start Playing</a></button></h2>
+</body>
+</html>
+<script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e){
+      document.querySelectorAll(".object").forEach(function(move){
+
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 250;
+        var y = (e.clientY * moving_value) / 250;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+      });
+    }
+    </script>
